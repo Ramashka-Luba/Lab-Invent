@@ -12,6 +12,7 @@
 
 <body>
     <header class="header">
+        <!-- <div class="header__left-blog"> -->
         <div class="header__logo logo">
             <a href="#" class="logo__link">
                 LIMS
@@ -26,61 +27,73 @@
             <!--  -->
         </div>
 
-        <div class="menu__select">
+        <div class="menu__select select">
             <select class="menu__select-list">
-                    <option class="menu__select-item" value="Instruments">Instruments</option>
-                    <option class="menu__select-item" value="1">Instruments1</option>
-                    <option class="menu__select-item" value="2">Instruments2</option>
-                </select>
+                <option class="menu__select-item" value="Instruments">Instruments</option>
+                <option class="menu__select-item" value="Instruments1">Instruments1</option>
+                <option class="menu__select-item" value="Instruments2">Instruments2</option>
+            </select>
         </div>
 
-        <div class="menu-list"></div>
+        <div class="menu__instruments">
+            <a href="#" class="menu__instruments-item">Widgets</a>
+            <a href="#" class="menu__instruments-item">View</a>
+            <a href="#" class="menu__instruments-item">Administration</a>
+        </div>
+        <!-- </div> -->
+
+        <!-- <div class="header__right-blog"> -->
+        <div class="menu__profile">
+            <img src="./assets/images/menu__profile.png" alt="user" />
+            <a href="#" class="menu__profile-link">Alexander</a>
         </div>
 
+        <div class="menu__lang select">
+            <select class="menu__lang-list">
+                <option class="menu__lang-item" value="ENG">ENG</option>
+                <option class="menu__lang-item" value="RU">RU</option>
+            </select>
+        </div>
+
+        <div class="menu__unlock">
+            <img src="./assets/images/menu__unlock-icon.png" alt="unlock icon" />
+        </div>
+        <!-- </div> -->
     </header>
+
     <div class="wrapper">
         <div class="sideBar">
-
-
 
             <div class="sideBar__search">
                 <input class="sideBar__input" type="text" name="search" placeholder="Search" />
             </div>
-
-            <div class="sideBar__runTime">
-                <div class="sideBar__runTime-time">
-                    <span>Run 00:23/01:00</span>
-                    <span>-00:47</span>
+            <div class="slider__bottom-blog">
+                <div class="sideBar__runTime">
+                    <div class="sideBar__runTime-time">
+                        <span>Run 00:23/01:00</span>
+                        <span>-00:47</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="sideBar__status status">
-                <div class="status__lable">RUN</div>
-                <div class="status__btn btn">
-                    <button class="btn">
-                        <img src="./assets/images/sideBar-btn-on.png" alt="on">
-                    </button>
-                    <button class="btn">
-                        <img src="./assets/images/sideBar-btn-off.png" alt="on">
-                    </button>
+                <div class="sideBar__status status">
+                    <div class="status__lable">RUN</div>
+                    <div class="status__btn btn">
+                        <button class="btn">
+                            <img src="./assets/images/sideBar-btn-on.png" alt="on">
+                        </button>
+                        <button class="btn">
+                            <img src="./assets/images/sideBar-btn-off.png" alt="on">
+                        </button>
+                    </div>
                 </div>
             </div>
 
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-        <div class="admin"></div>
     </div>
+
+
+
+
     <script src="./js/index.js"></script>
 
 </body>
