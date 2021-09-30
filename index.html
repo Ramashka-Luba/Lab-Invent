@@ -11,54 +11,55 @@
 </head>
 
 <body>
+
     <header class="header">
-        <!-- <div class="header__left-blog"> -->
-        <div class="header__logo logo">
-            <a href="#" class="logo__link">
-                LIMS
-            </a>
+        <div class="header__left-blog">
+            <div class="header__logo logo">
+                <a href="#" class="logo__link">
+                    LIMS
+                </a>
+            </div>
+
+            <div class="header__menu menu">
+                <!--  -->
+                <button title="нажми на меня;)" class="toggle-hamburger toggle-hamburger__arrtoleft">
+                    <span></span>
+                </button>
+                <!--  -->
+            </div>
+
+            <div class="menu__select select">
+                <select class="menu__select-list">
+                    <option class="menu__select-item" value="Instruments">Instruments</option>
+                    <option class="menu__select-item" value="Instruments1">Instruments1</option>
+                    <option class="menu__select-item" value="Instruments2">Instruments2</option>
+                </select>
+            </div>
+
+            <div class="menu__instruments">
+                <a href="#" class="menu__instruments-item">Widgets</a>
+                <a href="#" class="menu__instruments-item">View</a>
+                <a href="#" class="menu__instruments-item">Administration</a>
+            </div>
         </div>
 
-        <div class="header__menu menu">
-            <!--  -->
-            <button title="нажми на меня;)" class="toggle-hamburger toggle-hamburger__arrtoleft">
-                <span></span>
-            </button>
-            <!--  -->
-        </div>
+        <div class="header__right-blog">
+            <div class="menu__profile">
+                <img src="./assets/images/menu__profile.png" alt="user" />
+                <a href="#" class="menu__profile-link">Alexander</a>
+            </div>
 
-        <div class="menu__select select">
-            <select class="menu__select-list">
-                <option class="menu__select-item" value="Instruments">Instruments</option>
-                <option class="menu__select-item" value="Instruments1">Instruments1</option>
-                <option class="menu__select-item" value="Instruments2">Instruments2</option>
-            </select>
-        </div>
+            <div class="menu__lang select">
+                <select class="menu__lang-list">
+                    <option class="menu__lang-item" value="ENG">ENG</option>
+                    <option class="menu__lang-item" value="RU">RU</option>
+                </select>
+            </div>
 
-        <div class="menu__instruments">
-            <a href="#" class="menu__instruments-item">Widgets</a>
-            <a href="#" class="menu__instruments-item">View</a>
-            <a href="#" class="menu__instruments-item">Administration</a>
+            <div class="menu__unlock">
+                <img class="menu__unlock-icon" src="./assets/images/menu__unlock-icon.png" alt="unlock icon" />
+            </div>
         </div>
-        <!-- </div> -->
-
-        <!-- <div class="header__right-blog"> -->
-        <div class="menu__profile">
-            <img src="./assets/images/menu__profile.png" alt="user" />
-            <a href="#" class="menu__profile-link">Alexander</a>
-        </div>
-
-        <div class="menu__lang select">
-            <select class="menu__lang-list">
-                <option class="menu__lang-item" value="ENG">ENG</option>
-                <option class="menu__lang-item" value="RU">RU</option>
-            </select>
-        </div>
-
-        <div class="menu__unlock">
-            <img src="./assets/images/menu__unlock-icon.png" alt="unlock icon" />
-        </div>
-        <!-- </div> -->
     </header>
 
     <div class="wrapper">
@@ -68,27 +69,81 @@
                 <input class="sideBar__input" type="text" name="search" placeholder="Search" />
             </div>
             <div class="slider__bottom-blog">
-                <div class="sideBar__runTime">
-                    <div class="sideBar__runTime-time">
-                        <span>Run 00:23/01:00</span>
-                        <span>-00:47</span>
-                    </div>
+
+                <div class="sideBar__runTime-time">
+                    <span>Run 00:23/01:00</span>
+                    <span>-00:47</span>
                 </div>
+
+                <div class="sideBar__runTime"></div>
 
                 <div class="sideBar__status status">
                     <div class="status__lable">RUN</div>
-                    <div class="status__btn btn">
-                        <button class="btn">
+                    <div class="status__button">
+                        <button class="status__button-btn">
                             <img src="./assets/images/sideBar-btn-on.png" alt="on">
                         </button>
-                        <button class="btn">
+                        <button class="status__button-btn">
                             <img src="./assets/images/sideBar-btn-off.png" alt="on">
                         </button>
                     </div>
                 </div>
+
             </div>
 
         </div>
+
+        <div class="widgets">
+            
+            <div class="widgets__btn"></div>
+
+            <div class="widgets__wrap">
+                <div class="widgets-lable">
+                    <div class="widgets-indicator indicator-green"></div>
+                    <div class="widgets-lable-text">Sampler</div>
+                </div>
+                <div class="widgets__appliances appliances">
+                    <div class="appliances-icon icon">
+                        <svg class="icon__svg1">
+                            <use xlink:href="./assets/images/svg/syringe-icon.svg#tools1"></use>
+                        </svg>
+                        <div class="icon__tools">
+                            <img class="icon__tools-thermostat" src="./assets/images/thermostat@3x.png" alt="thermostat">
+                            <img class="icon__tools-vial" src="./assets/images/vial@3x.png" alt="vial">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="widgets__wrap">
+                <div class="widgets-lable">
+                    <div class="widgets-indicator indicator-yellow"></div>
+                    <div class="widgets-lable-text">Quat. Pump</div>
+                </div>
+                <div class="widgets__pump appliances">
+                    <div class="appliances-icon icon icon-card2">
+                        <svg class="icon__svg2">
+                            <use xlink:href="./assets/images/svg/a-bottle.svg#tools2"></use>
+                        </svg>
+                        <svg class="icon__svg2">
+                            <use xlink:href="./assets/images/svg/b-bottle.svg#tools3"></use>
+                        </svg>
+                        <svg class="icon__svg3">
+                            <use xlink:href="./assets/images/svg/valve-icon.svg#tools4"></use>
+                        </svg>
+                    </div>
+                    <span class="appliances-volume">1.000 mL/min</span>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+        <div class="main">
+
+        </div>
+
+    </div>
     </div>
 
 

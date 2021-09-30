@@ -27,18 +27,24 @@
     src: url("./../assets/fonts/HelveticaNeueCyr-Bold.ttf") format("truetype");
     font-style: normal;
 }
+body {
+    height: 100vh;
+}
 
 .header {
     height: 49px;
     display: flex;
     align-items: center;
     border: 1px solid red;
+    justify-content: space-between;
 }
 .header__left-blog {
+    height: 100%;
     display: flex;
     align-items: center;
 }
 .header__right-blog {
+    height: 100%;
     display: flex;
     align-items: center;
 }
@@ -48,13 +54,18 @@
 .header__logo {
     height: 100%;
     padding-left: 40px;
-    max-width: 279px;
-    width: 100%;
+    width: 279px;
+    /* width: 100%; */
     background-color: #2f3b4c;
     display: flex;
     align-items:center;
     position: relative;
+    transition: background-color 0.2s
 }
+.header__logo:hover {
+    background-color: #141920;
+}
+
 .logo__link {
     display: block;
     color: #fff;
@@ -89,6 +100,9 @@
     height: 3px;
     background: #afb0c3;
     position: relative;
+}
+.toggle-hamburger span:hover {
+    transform: scale(1.3);
 }
 .toggle-hamburger span::before, .toggle-hamburger span::after {
     content: "";
@@ -137,6 +151,7 @@
 /* Ввожу модификатор select чтобы можно было переиспользовать в menu__lang */
 .select {
     position: relative;
+    transition: transform 0.2s
 }
 .select::after {
     content: "";
@@ -164,15 +179,27 @@
     color: #727272;
     padding-right: 20px;
     cursor: pointer;
+    
+}
+.select:hover {
+    transform: scale(1.1);
 }
 
 /* Меню инструментов */
+.menu__instruments {
+    display: flex;
+}
 .menu__instruments-item {
     text-decoration: none;
     font-family: "RobotoRegular";
     font-size: 17px;
     letter-spacing: 0.33px;
     color: #727272;
+    
+    transition: transform 0.2s
+}
+.menu__instruments-item:hover {
+    transform: scale(1.1);
 }
 .menu__instruments-item:first-child {
     margin: 0 70px 0 65px;
@@ -190,8 +217,8 @@
     border-left: 1px solid #e1e7f0;
     border-right: 1px solid #e1e7f0;
     position: relative;
+    
 }
-
 .menu__profile-link {
     text-decoration: none;
     font-family: "RobotoRegular";
@@ -199,6 +226,10 @@
     letter-spacing: 0.33px;
     color: #727272;
     margin-left: 15px;
+    transition: transform 0.2s
+}
+.menu__profile-link:hover {
+    transform: scale(1.1);
 }
 /* растянула ссылку на всю дивку чтоб можно было нажимать на любое место, а не только на линку*/
 .menu__profile-link::after {
@@ -235,25 +266,29 @@
     align-items: center;
     border-left: 1px solid #e1e7f0;
 }
+.menu__unlock-icon {
+    transition: transform 0.2s
+}
+.menu__unlock-icon:hover {
+    transform: scale(1.3);
+}
 
 
 /* основной контент */
 .wrapper {
-
+    height: calc(100% - 50px);
+    display:flex;
 }
-
 .sideBar {
     max-width: 279px;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     border: 1px solid red;
     background-color: #e1e5e8;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-
-
 .sideBar__search {
     padding: 25px 45px 25px 20px;
     background-color: transparent;
@@ -263,15 +298,17 @@
     font-size: 12px;
     letter-spacing: 0.24px;
     position: relative;
+    transition: background-color 0.2s
 }
-
+.sideBar__search:hover {
+    background-color: #d0d0d0;
+}
 .sideBar__input {
     width: 100%;
     background-color: transparent;
     border: none;
     outline: none;
 }
-
 .sideBar__search::after {
     content: "";
     width: 17px;
@@ -282,9 +319,9 @@
     right: 25px;
     transform: translateY(-50%);
 }
-
 /*  */
 .sideBar__runTime {
+    height: 25px;
     width: 100%;
     background-color: #cac8c8;
 
@@ -293,7 +330,6 @@
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
-
 @keyframes progress {
     from {
         width: 0%;
@@ -303,7 +339,6 @@
         width: 100%;
     }
 }
-
 .sideBar__runTime-time {
     width: 100%;
     padding: 8px 15px 8px 20px;
@@ -312,10 +347,10 @@
     color: #2f3b4c;
     display: flex;
     justify-content: space-between;
+    position: relative;
+    top: 28px;
 }
-
 /*  */
-
 .sideBar__status {
     width: 100%;
     padding: 15px 20px;
@@ -324,18 +359,137 @@
     align-items: center;
     background-color: #2575aa;
 }
-
 .status__lable {
     font-family: "RobotoBold";
     font-size: 22px;
     color: #fff;
 }
-
-.btn {
+.status__button-btn {
     background-color: transparent;
     border: none;
+    transition: transform 0.2s
 }
-
-.btn:first-child {
+.status__button-btn:hover {
+    transform: scale(1.3);
+} 
+.status__button-btn:first-child {
     margin-right: 10px;
 }
+
+/* widgets */
+.widgets {
+    width: 228px;
+    background-color: #f1f3f2;
+    box-shadow: inset 0px 3px 7px 0 rgba(0, 0, 0, 0.35);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 0 20px;
+    position: relative;
+}
+/* кнопка */
+.widgets__btn {
+    background-image: url(./../assets/images/button.png);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: 38px;
+    right: -16px;
+    box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* карточка */
+.widgets__wrap {}
+
+.widgets-lable {
+    display: flex;
+    align-items:center;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #bfc2c4;
+    padding: 8px 10px;
+}
+.widgets-indicator {
+    width: 10px;
+    height: 10px;
+}
+.indicator-green {
+    background-color: #1a9022;
+}
+.indicator-yellow {
+    background-color: #f5ad3c;
+}
+.widgets-lable-text {
+    margin-left: 10px;
+    font-family: "RobotoBold";
+    font-size: 14px;
+}
+.widgets__appliances {
+    display: flex;
+    justify-content: center;
+}
+.widgets__pump {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.appliances {
+    width: 189px;
+    height: 158px;
+    background-color: #fff;
+    border: solid 1px #bfc2c4;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.appliances-icon {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.icon-card2 {
+    margin-top: 30px;
+}
+.icon__tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 40px;
+}
+
+.icon__svg1 {
+    width: 57px;
+    height: 106px;
+}
+.icon__tools-thermostat {
+    width: 28px;
+    height: 42px;
+    margin-bottom: 20px;
+}
+.icon__tools-vial {
+    width: 21px;
+    height: 35px;
+}
+
+.icon__svg2 {
+    width: 31px;
+    height: 67px;
+    margin-left: 8px;
+}
+.icon__svg3 {
+    width: 51px;
+    height: 31px;
+    margin-left: 25px;
+}
+
+.appliances-volume {
+    display: block;
+    text-align: center;
+}
+
+/* главная */
+/* .main {
+    background-color: #f1f3f2;
+} */
