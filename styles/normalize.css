@@ -173,6 +173,10 @@ textarea {
   line-height: 1.15; /* 1 */
   margin: 0; /* 2 */
 }
+button {
+  cursor: pointer;
+}
+
 
 /**
  * Show the overflow in IE.

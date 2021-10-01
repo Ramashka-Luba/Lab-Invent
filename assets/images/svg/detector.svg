@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="63.5" height="78.5">
+    <path stroke="#2F3B4C" fill="none" d="M17 42h9s1.062-8 2-8c.937 0 2 8 2 8h2s.995-3 2-3c1 0 2 3 2 3h8"/>
+    <path stroke="#11A9EC" fill="none" d="M30.5 26C36.851 26 42 31.149 42 37.5S36.851 49 30.5 49 19 43.851 19 37.5 24.149 26 30.5 26z"/>
+    <path fill-rule="evenodd" stroke="#11A9EC" fill="#FFF" d="m23.646 45.646.707.707-9.999 10.001-.708-.708 10-10z"/>
+    <text font-family="Helvetica" fill="#2F3B4C" font-weight="bold" font-size="10" x="18" y="-133.409">NPD</text>
+    <text font-family="Roboto" fill="#2F3B4C" opacity=".502" font-size="10" y="-133.27">Back Detector</text>
+</svg>

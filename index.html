@@ -55,9 +55,9 @@
                 </select>
             </div>
 
-            <div class="menu__unlock">
+            <button class="menu__unlock">
                 <img class="menu__unlock-icon" src="./assets/images/menu__unlock-icon.png" alt="unlock icon" />
-            </div>
+            </button>
         </div>
     </header>
 
@@ -145,7 +145,7 @@
                     <div class="method__header">
                         <div class="method__header-workList workList">
 
-                            <div class="workList-title">WORKLIST</div>
+                            <a href="#" class="workList-title">WORKLIST</a>
 
                             <button class="workList-playBtn">
                                 <img src="./assets/images/workList-iconPlay.png" alt="Play" class="workList-ocon">
@@ -161,10 +161,19 @@
                         <div class="method__header-singleRun">SINGLE RUN</div>
                     </div>
                     <div class="method__content">
-                        <div class="method__tabs"></div>
-                        <div class="method__leftBlog"></div>
+                        <div class="method__tabs">
+                            <button class="method__tabs-btn">ALS</button>
+                            <button class="method__tabs-btn">Inlets</button>
+                            <button class="method__tabs-btn active">Columns</button>
+                        </div>
+                        <div class="method__leftBlog">
+                            <div class="method__leftBlog-instruments">
+                                
+                            </div>
+                        </div>
                         <div class="method__rightBlog"></div>
                     </div>
+                    <div class="method__footer"></div>
                 </div>
                 <div class="mainChart"></div>
                 <div class="result"></div>
