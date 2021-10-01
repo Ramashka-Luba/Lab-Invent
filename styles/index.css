@@ -28,7 +28,7 @@
     font-style: normal;
 }
 body {
-    height: 100vh;
+height: 100vh;
 }
 
 .header {
@@ -397,6 +397,10 @@ body {
     top: 38px;
     right: -16px;
     box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s
+}
+.widgets__btn:hover {
+    transform: scale(1.3);
 }
 
 /* карточка */
@@ -490,6 +494,100 @@ body {
 }
 
 /* главная */
-/* .main {
+.main {
+    padding: 15px;
     background-color: #f1f3f2;
-} */
+    width: 100%;
+    border: 1px solid red;
+}
+.main__grig-wrap {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 56% 43%;
+    grid-template-rows: 49% 49%;
+    gap: 15px;
+}
+
+.method,
+.mainChart,
+.result {
+    background-color: #fff;
+    border: solid 1px #bfc2c4;
+}
+.method {
+    grid-column: 1/3;
+}
+
+
+/* верхний блог хеадер */
+
+/* первый блок */
+.method__header {
+    height: 46px;
+    border-bottom: solid 1px #bfc2c4;
+    display: flex;
+}
+.method__header-workList {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f2;
+    padding: 15px 40px 15px 15px;
+}
+.workList-title {
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #2f3b4c;
+    margin-right: 15px;
+}
+.workList-playBtn {
+    background-color: none;
+    border: none;
+    margin-right: 20px;
+}
+.workList-playTitle {
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #2574a9;
+}
+.workList-goTo {
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #727272;
+    margin-right: 20px;
+}
+.workList-goToSpan {
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    color: #2f3b4c;
+}
+.workList-time {
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #2f3b4c;
+}
+/* второй блок */
+.method__header-method {
+    border-right: solid 1px #bfc2c4;
+    border-left: solid 1px #bfc2c4;
+    padding: 15px 20px;
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #2f3b4c;
+}
+
+.method__header-methodSpan {
+    font-family: "RobotoRegular";
+    font-size: 14px;
+    color: #2f3b4c;
+}
+/* второй блок */
+.method__header-singleRun {
+    padding: 15px 80px 15px 15px;
+    border-right: solid 1px #bfc2c4;
+    background-color: #f1f3f2;
+    font-family: "RobotoBold";
+    font-size: 14px;
+    color: #2f3b4c;
+}
