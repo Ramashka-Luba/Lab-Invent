@@ -166,12 +166,65 @@
                             <button class="method__tabs-btn">Inlets</button>
                             <button class="method__tabs-btn active">Columns</button>
                         </div>
-                        <div class="method__leftBlog">
-                            <div class="method__leftBlog-instruments">
-                                
+                        <div class="method__leftBlock">
+                            <div class="method__leftBlock-instruments">
+                                <img class="method__instruments-img" src="./assets/images/inlet.png" alt="inlet">
+                                <img class="method__instruments-img" src="./assets/images/column.png" alt="column">
+                                <img class="method__instruments-img" src="./assets/images/detector.png" alt="detector">
+                                <div class="method__instruments-initialData">
+                                    (Initial): 0 min
+                                    ArMe @ 35 Oc Oven
+                                    Out: Ambient Pressure
+                                    25 m * 320 μm * 1μm
+                                </div>
                             </div>
+
+                            <div class="method__leftBlock__controlMode">
+                                <h3 class="controlMode-title">Control Mode</h3>
+                                <div class="chechbox">
+                                    <input class="checkbox__input" type="checkbox" id="checkbox1">
+                                    <lable class="checkbox__lable" for="checkbox1">On</lable>
+                                </div>
+                                <form class="controlMode__form" action="#">
+                                        <lable class="controlMode__lable">Flow</lable>
+                                        <div>
+                                            <input class="controlMode__input" type="namder">
+                                            <span class="controlMode__span">mL/min</span>
+                                        </div>
+                                        
+                                        <lable class="controlMode__lable">Pressure</lable>
+                                        <div>
+                                            <input class="controlMode__input" type="namder">
+                                            <span class="controlMode__span">psi</span>
+                                        </div>
+                                        
+                                        <lable class="controlMode__lable">Average Velocity</lable>
+                                        <div>
+                                            <input class="controlMode__input" type="namder">
+                                            <span class="controlMode__span">cm/sec</span>
+                                        </div>
+                                        
+                                        <lable class="controlMode__lable">Holdup Time</lable>
+                                        <div>
+                                            <input class="controlMode__input" type="namder">
+                                            <span class="controlMode__span">min</span>
+                                        </div>
+                                </form>
+                            </div>
+
+                            <div class="method__leftBlock__postRun">
+                                <h3 class="controlMode-title">Post Run</h3>
+                                <form class="postRun__form" action="#">
+                                    <lable class="controlMode__lable">Post Run</lable>
+                                    <div>
+                                        <input class="controlMode__input" type="namder">
+                                        <span class="controlMode__span">mL/min</span>
+                                    </div>
+                                </form>
+                            </div>
+
                         </div>
-                        <div class="method__rightBlog"></div>
+                        <div class="method__rightBlock"></div>
                     </div>
                     <div class="method__footer"></div>
                 </div>
