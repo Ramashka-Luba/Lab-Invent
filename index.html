@@ -157,7 +157,8 @@
                             <div class="workList-time">02:15:00</div>
 
                         </div>
-                        <div class="method__header-method">Method:  <span class="method__header-methodSpan">Method1.amx (00:00/04:30)</span></div>
+                        <div class="method__header-method">Method: <span class="method__header-methodSpan">Method1.amx
+                                (00:00/04:30)</span></div>
                         <div class="method__header-singleRun">SINGLE RUN</div>
                     </div>
                     <div class="method__content">
@@ -180,40 +181,40 @@
                             </div>
 
                             <div class="method__leftBlock__controlMode">
-                                <h3 class="controlMode-title">Control Mode</h3>
+                                <h3 class="method-title controlModeAfter">Control Mode</h3>
                                 <div class="chechbox">
                                     <input class="checkbox__input" type="checkbox" id="checkbox1">
                                     <lable class="checkbox__lable" for="checkbox1">On</lable>
                                 </div>
                                 <form class="controlMode__form" action="#">
-                                        <lable class="controlMode__lable">Flow</lable>
-                                        <div>
-                                            <input class="controlMode__input" type="namder">
-                                            <span class="controlMode__span">mL/min</span>
-                                        </div>
-                                        
-                                        <lable class="controlMode__lable">Pressure</lable>
-                                        <div>
-                                            <input class="controlMode__input" type="namder">
-                                            <span class="controlMode__span">psi</span>
-                                        </div>
-                                        
-                                        <lable class="controlMode__lable">Average Velocity</lable>
-                                        <div>
-                                            <input class="controlMode__input" type="namder">
-                                            <span class="controlMode__span">cm/sec</span>
-                                        </div>
-                                        
-                                        <lable class="controlMode__lable">Holdup Time</lable>
-                                        <div>
-                                            <input class="controlMode__input" type="namder">
-                                            <span class="controlMode__span">min</span>
-                                        </div>
+                                    <lable class="controlMode__lable">Flow</lable>
+                                    <div>
+                                        <input class="controlMode__input" type="namder">
+                                        <span class="controlMode__span">mL/min</span>
+                                    </div>
+
+                                    <lable class="controlMode__lable">Pressure</lable>
+                                    <div>
+                                        <input class="controlMode__input" type="namder">
+                                        <span class="controlMode__span">psi</span>
+                                    </div>
+
+                                    <lable class="controlMode__lable">Average Velocity</lable>
+                                    <div>
+                                        <input class="controlMode__input" type="namder">
+                                        <span class="controlMode__span">cm/sec</span>
+                                    </div>
+
+                                    <lable class="controlMode__lable">Holdup Time</lable>
+                                    <div>
+                                        <input class="controlMode__input" type="namder">
+                                        <span class="controlMode__span">min</span>
+                                    </div>
                                 </form>
                             </div>
 
                             <div class="method__leftBlock__postRun">
-                                <h3 class="controlMode-title">Post Run</h3>
+                                <h3 class="method-title postRunAfter">Post Run</h3>
                                 <form class="postRun__form" action="#">
                                     <lable class="controlMode__lable">Post Run</lable>
                                     <div>
@@ -224,7 +225,28 @@
                             </div>
 
                         </div>
-                        <div class="method__rightBlock"></div>
+                        <div class="method__rightBlock">
+                            <h3 class="method-title settingsAfter">Pressure/Flow Settings</h3>
+                            <div class="settingsRadioButton">
+                                <div class="radio">
+                                    <input class="radio__input" name="pressure" type="radio" id="radio1">
+                                    <label class="radio__label" for="radio1">Constant Pressure</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="radio__input" name="pressure" type="radio" id="radio2">
+                                    <label class="radio__label" for="radio2">Ramped Pressure</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="radio__input" name="pressure" type="radio" id="radio3">
+                                    <label class="radio__label" for="radio3">Constant Flow</label>
+                                </div>
+                                <div class="radio">
+                                    <input class="radio__input" name="pressure" type="radio" id="radio4">
+                                    <label class="radio__label" for="radio4">Ramped Flow</label>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                     <div class="method__footer"></div>
                 </div>
@@ -233,7 +255,7 @@
             </div>
         </div>
 
-        
+
 
     </div>
 

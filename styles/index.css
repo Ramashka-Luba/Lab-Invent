@@ -390,7 +390,7 @@ height: 100vh;
 }
 /* кнопка */
 .widgets__btn {
-    background-image: url(./../assets/images/button.png);
+    background-color: #f1f3f2;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -398,10 +398,20 @@ height: 100vh;
     top: 38px;
     right: -16px;
     box-shadow: 0.5px 0.9px 2px 0 rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s
+    transition: background-color 0.2s;
+}
+.widgets__btn::after {
+    content: "";
+    background-image: url(./../assets/images/button-arrow.png);
+    width: 6px;
+    height: 11px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%)
 }
 .widgets__btn:hover {
-    transform: scale(1.3);
+    background-color: #cccecd;
 }
 
 /* карточка */
@@ -711,26 +721,30 @@ h3 {
     letter-spacing: 0.26px;
     color: #2f3b4c;
 }
-.controlMode-title {
+.method-title {
     position: relative;
 }
-.controlMode-title::before,
-.controlMode-title::after {
+.method-title::before {
     content: "";
     height: 1px;
     background-color: #acacb4;
     position: absolute;
     top: 15px;
-}
-.controlMode-title::before {
     width: 11px;
     top: 14px;
     left: -20px;
 }
-.controlMode-title::after {
+.controlModeAfter::after {
+    content: "";
+    height: 1px;
+    background-color: #acacb4;
+    position: absolute;
+    top: 15px;
     width: 464px;
+    top: 14px;
     left: 100px;
 }
+
 .checkbox__lable {
     font-family: "HelveticaNeueCyrRoman";
     font-size: 12px;
@@ -763,8 +777,19 @@ h3 {
     color: #727272;
 }
 
+/* 3 */
 .method__leftBlock__postRun {
     margin-top: 10px;
+}
+.postRunAfter::after {
+    content: "";
+    height: 1px;
+    background-color: #acacb4;
+    position: absolute;
+    top: 15px;
+    width: 195px;
+    top: 14px;
+    left: 70px;
 }
 .postRun__form {
     display: grid;
@@ -772,6 +797,81 @@ h3 {
     grid-template-rows: auto;
     gap: 5px;
 }
+
+/* правый блог */
+.method__rightBlock {
+
+}
+.settingsAfter {
+    margin: 15px 0 0 30px;
+}
+.settingsAfter::after {
+    content: "";
+    height: 1px;
+    background-color: #acacb4;
+    position: absolute;
+    top: 15px;
+    width: 402px;
+    top: 14px;
+    left: 165px;
+}
+
+/* радио кнопки */
+.settingsRadioButton {
+    display: flex;
+}
+.radio {
+    position: relative;
+    margin-left: 25px;
+}
+.radio__input {
+    appearance: none;
+}
+.radio__label {
+    padding-left: 20px;
+    font-family: "RobotoBold";
+    font-size: 12px;
+    color: #2f3b4c;
+    line-height: 2.95;
+    letter-spacing: 0.24px;
+    cursor: pointer;
+}
+.radio__label::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #bfc2c4;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 1;
+    transition: border 0.2s linear;
+}
+
+.radio__label::after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 5px solid #11a9ec;
+    border-radius: 50%;
+
+    position: absolute;
+    top: 8px;
+    left: 0;
+    z-index: 2;
+
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+.radio__input:checked + .radio__label::after {
+    opacity: 1;
+}
+
+
 
 
 
