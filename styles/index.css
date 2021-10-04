@@ -366,7 +366,7 @@ body {
     width: 100%;
     background-color: #cac8c8;
 
-    /* animation-name: progress; */
+    animation-name: progress;
     animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
